@@ -13,7 +13,7 @@
         "Prop1": {
             "Value": 9,
             "ValuesType": "Int32",
-            "Column": 1,
+            "Column": 2,
             "Row": null,
             "Text": "Доктор",
             "Rules": null,

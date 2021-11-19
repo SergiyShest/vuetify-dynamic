@@ -1,58 +1,77 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main><v-container fluid>
       <!-- <div>{{MainItem.Prop1.Value}}</div> -->
-      <div ref="container"></div>
+      <v-row  ref="container"></v-row>
+      </v-container>
     </v-main>
     <v-btn @click="Get">add</v-btn>
   </v-app>
 </template>
 
 <script>
- import json from './components/data.json'
-import { EditModel } from './EditModel.js';
+import json from "./components/data.json";
+import { EditModel } from "./EditModel.js";
 import textField from "./components/textField";
+import formColumn from "./components/formColumn";
 import Vue from "vue";
-import vuetify from './plugins/vuetify'
+import vuetify from "./plugins/vuetify";
 export default {
   name: "App",
 
   components: {
-    textField,
+    textField,formColumn
   },
 
   data: () => ({
-    json:json,
-    MainItem: 
-    {
-      Text:'text',
-      Value:'TestValue',
-      Description: "Description" 
-    }
+    json: json,
+    MainItem: {
+      Text: "text",
+      Value: "TestValue",
+      Description: "Description",
+    },
   }),
   methods: {
-    Get(){
+    Get() {
       this.Set(this.json);
-    }
-    ,
+    },
     Set(val) {
-      console.log(val);
-				if (val.Errors && val.Errors.length > 0) {
-					this.ShowErrors(val);
-				}
-				if (val.Item) {
+      if (val.Errors && val.Errors.length > 0) {
+        this.ShowErrors(val);
+      }
+      if (val.Item) {
+        var mainItems = val.Item;
 
-					var mainItems = val.Item;
+        var model = new EditModel(mainItems);
+        this.MainItem = model;
+        for (var column in this.MainItem.Columns) {
 
-					var model = new EditModel(mainItems)
-					this.MainItem = model;
-         for(var propertyName in this.MainItem) {
-            var property=this.MainItem[propertyName];
-            this.Add(property)
+          column=this.MainItem.Columns[column];
+         var colEl= this.AddColumn();
+          for (var propertyName in this.MainItem) {
+            var property = this.MainItem[propertyName];
+            if(column==property.Column)
+            {
+               this.AddField(property,colEl);
+            }          
+
           }
-				}
-			},
-    Add(item) {
+
+        }
+      }
+    },
+    AddColumn() {
+      var componentClass = Vue.extend(formColumn);
+      var instance = new componentClass({
+        vuetify: vuetify,
+       });
+      //instance.$slots.default = ["Click me!"];
+      instance.$mount(); // pass nothing
+     this.$refs.container.appendChild(instance.$el);
+     return instance.$el;
+     
+    },
+    AddField(item,container) {
       var componentClass = Vue.extend(textField);
       var instance = new componentClass({
         vuetify: vuetify,
@@ -63,13 +82,8 @@ export default {
       });
       //instance.$slots.default = ["Click me!"];
       instance.$mount(); // pass nothing
-      this.$refs.container.appendChild(instance.$el);
-    
-    }
-    ,AddProgr(property){
-console.log(property);
-
-
+     // this.$refs.container.appendChild(instance.$el);
+     container.appendChild(instance.$el);
     },
   },
 };
