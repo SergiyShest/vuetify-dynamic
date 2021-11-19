@@ -1,0 +1,304 @@
+{
+    "Item": {
+        "Id": {
+            "Value": 3,
+            "ValuesType": "Int32",
+            "Column": 1,
+            "Row": null,
+            "Readonly":true,
+            "Text": "Id",
+            "Rules": null,
+            "AvaiableValues": null
+        },
+        "Prop1": {
+            "Value": 9,
+            "ValuesType": "Int32",
+            "Column": 1,
+            "Row": null,
+            "Text": "Доктор",
+            "Rules": null,
+            "AvaiableValues": [
+                {
+                    "Id": 9,
+                    "Name": "Dgn. Fi3ry GrandWurm"
+                },
+                {
+                    "Id": 4,
+                    "Name": "Dr. Arta Monjazeb"
+                },
+                {
+                    "Id": 7,
+                    "Name": "Dr. Emanual Maverakis"
+                },
+                {
+                    "Id": 6,
+                    "Name": "Dr. Joseph Tuscano"
+                },
+                {
+                    "Id": 5,
+                    "Name": "Dr. Lloid Miller"
+                },
+                {
+                    "Id": 3,
+                    "Name": "Dr. Pain Box"
+                }
+            ]
+        },
+        "Prop2": {
+            "Value": 4,
+            "ValuesType": "Int32",
+            "Column": 1,
+            "Row": null,
+            "Text": "Patients",
+            "Rules": null,
+            "AvaiableValues": [
+                {
+                    "Id": 2071,
+                    "Name": null
+                },
+                {
+                    "Id": 2167,
+                    "Name": null
+                },
+                {
+                    "Id": 2168,
+                    "Name": null
+                },
+                {
+                    "Id": 2170,
+                    "Name": null
+                },
+                {
+                    "Id": 1062,
+                    "Name": "123ece LastName"
+                },
+                {
+                    "Id": 2175,
+                    "Name": "292d34 LastName"
+                },
+                {
+                    "Id": 2062,
+                    "Name": "3fbb09 LastName"
+                },
+                {
+                    "Id": 2195,
+                    "Name": "4e5740 LastName"
+                },
+                {
+                    "Id": 2219,
+                    "Name": "5ec692 LastName"
+                },
+                {
+                    "Id": 2092,
+                    "Name": "65d02b ыыыыыыыыыыы"
+                },
+                {
+                    "Id": 2115,
+                    "Name": "89c8af l_b96fd130"
+                },
+                {
+                    "Id": 2154,
+                    "Name": "8b638b LastName"
+                },
+                {
+                    "Id": 2234,
+                    "Name": "962265 LastName"
+                },
+                {
+                    "Id": 2127,
+                    "Name": "9a7d0e LastName"
+                },
+                {
+                    "Id": 1070,
+                    "Name": "9f0fe5 LastName"
+                },
+                {
+                    "Id": 1029,
+                    "Name": "A A"
+                },
+                {
+                    "Id": 2169,
+                    "Name": "A A"
+                },
+                {
+                    "Id": 1023,
+                    "Name": "Andrei Kunitsyn"
+                },
+                {
+                    "Id": 1024,
+                    "Name": "ANDREY KUNITSYN"
+                },
+                {
+                    "Id": 1013,
+                    "Name": "Artur Pirozhkov"
+                },
+                {
+                    "Id": 1053,
+                    "Name": "bb9e71 LastName"
+                },
+                {
+                    "Id": 2143,
+                    "Name": "c34773 LastName"
+                },
+                {
+                    "Id": 2208,
+                    "Name": "c80ede LastName"
+                },
+                {
+                    "Id": 2111,
+                    "Name": "f_b96fd130 l_b96fd130"
+                },
+                {
+                    "Id": 2112,
+                    "Name": "f_b96fd130 l_b96fd130"
+                },
+                {
+                    "Id": 2113,
+                    "Name": "f_b96fd130 l_b96fd130"
+                },
+                {
+                    "Id": 2114,
+                    "Name": "f_b96fd130 l_b96fd130"
+                },
+                {
+                    "Id": 13,
+                    "Name": "f_f70ae9e6 l_f70ae9e6"
+                },
+                {
+                    "Id": 4,
+                    "Name": "Jason Test"
+                },
+                {
+                    "Id": 10,
+                    "Name": "Jenifer Test"
+                },
+                {
+                    "Id": 1020,
+                    "Name": "Karen Candy"
+                },
+                {
+                    "Id": 1018,
+                    "Name": "Linda Green"
+                },
+                {
+                    "Id": 1019,
+                    "Name": "Linda Green"
+                },
+                {
+                    "Id": 12,
+                    "Name": "Linda Test"
+                },
+                {
+                    "Id": 1021,
+                    "Name": "Luis Valery"
+                },
+                {
+                    "Id": 1027,
+                    "Name": "Name LastName"
+                },
+                {
+                    "Id": 1028,
+                    "Name": "Name LastName"
+                },
+                {
+                    "Id": 1030,
+                    "Name": "Name LastName"
+                },
+                {
+                    "Id": 2110,
+                    "Name": "Name LastName"
+                },
+                {
+                    "Id": 2165,
+                    "Name": "Name LastName"
+                },
+                {
+                    "Id": 11,
+                    "Name": "Patrik Test"
+                },
+                {
+                    "Id": 1025,
+                    "Name": "Peter Parker"
+                },
+                {
+                    "Id": 1026,
+                    "Name": "Peter Parker"
+                },
+                {
+                    "Id": 2166,
+                    "Name": "Red "
+                },
+                {
+                    "Id": 2084,
+                    "Name": "S SS"
+                },
+                {
+                    "Id": 1022,
+                    "Name": "Андрей Куницын"
+                },
+                {
+                    "Id": 2088,
+                    "Name": "ккк ыыыыыыыыыыы"
+                },
+                {
+                    "Id": 2089,
+                    "Name": "ккк ыыыыыыыыыыы"
+                },
+                {
+                    "Id": 2090,
+                    "Name": "ккк ыыыыыыыыыыы"
+                },
+                {
+                    "Id": 2091,
+                    "Name": "ккк ыыыыыыыыыыы"
+                }
+            ]
+        },
+        "PropS2": {
+            "Value": "описание доктора",
+            "ValuesType": "String",
+            "Column": 1,
+            "Row": null,
+            "Text": "Address",
+            "Rules": null,
+            "AvaiableValues": null
+        },
+        "PropD2": {
+            "Value": null,
+            "ValuesType": "DateTime",
+            "Column": 1,
+            "Row": null,
+            "Text": "DateEnd",
+            "Rules": null,
+            "AvaiableValues": null
+        },
+        "PropD1": {
+            "Value": null,
+            "ValuesType": "DateTime",
+            "Column": 1,
+            "Row": null,
+            "Text": "Date begin",
+            "Rules": null,
+            "AvaiableValues": null
+        },
+        "PropS1": {
+            "Value": "777",
+            "ValuesType": "String",
+            "Column": 1,
+            "Row": null,
+            "Text": "TestField",
+            "Rules": null,
+            "AvaiableValues": null
+        },
+        "PropN1": {
+            "Value": 3.00000,
+            "ValuesType": "Decimal",
+            "Column": 1,
+            "Row": null,
+            "Text": "Count",
+            "Rules": null,
+            "AvaiableValues": null
+        }
+    },
+    "Errors": []
+}
